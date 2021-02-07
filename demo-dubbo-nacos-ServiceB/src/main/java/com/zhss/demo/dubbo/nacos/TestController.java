@@ -10,6 +10,7 @@ public class TestController {
 
     @Reference(version = "1.0.0",
             interfaceClass = ServiceA.class,
+            // 集群故障转移策略
             cluster = "failfast")
     private ServiceA serviceA;
 
